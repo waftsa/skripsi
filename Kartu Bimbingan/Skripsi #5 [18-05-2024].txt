@@ -1,0 +1,16 @@
+Skripsi #5
+
+Progress : 
+- Data yang terkumpul ada 1500 komentar TikTok 
+- Data yang diambil ada 2 jenis (local dan internasional)
+- Data sudah dilakukan preprocessing 
+- Model LSTM sudah dibangun
+
+PR : 
+- Data dilabel manual 
+- Buku mulai dicicil secepatnya
+- API TikTok? 
+
+Info : 
+Mingdep bimbingan offline
+hari rabu jam 11 - 2 

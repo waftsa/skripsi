@@ -1,0 +1,11 @@
+Skripsi #6 [22-05-2024]
+
+Progress : 
+Nothing, sibuk ngamon anak orang
+
+Next Progress 
+- Bab 1 dan 2
+- Data terkumpul 3000
+- Labeled 50%
+- Udah di run di program 
+- Frekuensi kata terbanyak muncul pada setiap label

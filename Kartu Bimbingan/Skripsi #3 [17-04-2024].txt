@@ -1,0 +1,20 @@
+Skripsi #3 [17-04-2024]
+
+- awalnya analisis sentimen kampanya calon presiden 
+- Pak ino kasih masukan kalau momen politik pemilihan presiden itu udah lewat dan sekarang udah keliatan dominannya kemana
+- kasus yang rencanya di ambil : konflik Israel dan Palestina
+- timelinenya : dari awal tahun 2023 sampai april atau mei 
+- kebetulan di tempat magang lagi kelola berita-berita palestina juga
+- dan emang sempat ada rencana bikin project yang 11 12 dengan ini
+
+
+Pertanyaan 
+- untuk pengambilan data apakah baiknya dibatasi sampai waktu tertentu
+- baatasan banyak data yang diambil baiknya berapa, karena satu video aja bisa sampai 10k komen
+- 7 emosi atau positif, negatif dan netral aja?
+
+Jawab Bu Helen
+
+- Ini klasifikasi sentimen mau dibawa kemana
+- ambil video sesuai timeline
+- fokus ngumpulin data dulu

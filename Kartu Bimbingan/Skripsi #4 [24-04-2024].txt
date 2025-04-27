@@ -1,0 +1,15 @@
+Skripsi #4 [24-04-2024]
+
+Jawab Bu Helen
+
+- Ini klasifikasi sentimen mau dibawa kemana
+- ambil video sesuai timeline
+- fokus ngumpulin data dulu
+
+what to do:
+
+- Ambil data dari satu akun aja, yang selalu ngasih informasi terkait konflik palestina-israel.
+- buat konsisten ke satu akun masih explore
+- hasil akhirnya adalah adalah perbandingan frekuensi sentimen setiap timeline
+(contoh : dari 7 oktober-pertukaran sandera-gencatan senjata-mulai perang lagi)
+- hasil akhir juga bisa perbandingan penggunaan metode LSTM dengan naive bayes
