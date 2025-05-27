@@ -1,7 +1,13 @@
-# Crawl Data
+import snscrape.modules.twitter as sntwitter
+import pandas as pd
 
-filename = 'dataset 14-4-2025.csv'
-search_keyword = 'palestine lang:en until:2025-4-7 since:2024-10-7'
-limit = 5000
+query = "genocide since:2023-10-07 until:2023-10-20 lang:en"
+tweets = []
 
-!npx --yes tweet-harvest@latest -o "{filename}" -s "{search_keyword}" -l {limit} --token ""
+for i, tweet in enumerate(sntwitter.TwitterSearchScraper(query).get_items()):
+    if i > 1000:  # batas jumlah tweet
+        break
+    tweets.append([tweet.date, tweet.content, tweet.user.username])
+
+df = pd.DataFrame(tweets, columns=["Date", "Content", "Username"])
+df.to_csv("free_palestine.csv", index=False)
