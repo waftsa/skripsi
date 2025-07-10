@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        textarea { width: 300px; height: 100px; }
+        .result { font-size: 24px; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Analisis Sentimen Komentar</h1>
+    <form method="POST">
+        <textarea name="input_text" placeholder="Masukkan teks..."></textarea><br><br>
+        <button type="submit">Analisis</button>
+    </form>
+    {% if sentiment %}
+        <div class="result">Hasil: {{ sentiment }}</div>
+    {% endif %}
+</body>
+</html>
