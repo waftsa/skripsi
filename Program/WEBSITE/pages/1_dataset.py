@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
 # Judul halaman
 st.title("📊 Dataset Penelitian")
@@ -15,8 +16,10 @@ Dataset ini diambil dari Twitter dengan menggunakan beberapa kata kunci, yaitu:
 
 Pengambilan data ini dimulai dari tanggal 7 oktober 2023 hingga 7 april 2025. Dataset tersebut akan digunakan sebagai data untuk training model.
 """)
+BASE_DIR = Path(__file__).resolve().parent.parent  # naik 1 folder dari /pages ke root
+data_path = BASE_DIR / "data" / "data_hasil_scraping.csv"
 
-df = pd.read_csv('data/data_hasil_scraping.csv')
+df = pd.read_csv(data_path)
 
 # Tampilkan semua data
 st.subheader("📌 Seluruh Data yang Terkumpul")
