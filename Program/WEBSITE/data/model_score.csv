@@ -1,0 +1,4 @@
+Model,Split Type,LSTM Layers,Dropout,Dense Units,Activation,Loss,Learning Rate,Early Stopping,Epochs,Batch Size,Akurasi,Precision,Recall,F1-score
+LSTM 1,K-Fold (5),"2 layers, return_sequences=True",0.2,3,Softmax,Sparse Categorical Crossentropy,0.0001,Patience=3,50,32,0.58,0.54,0.54,0.54
+LSTM 2,K-Fold (5),"1 layer, return_sequences=False",0.2,3,Softmax,Sparse Categorical Crossentropy,0.001,Patience=3,50,32,0.72,0.72,0.72,0.72
+LSTM 3,Train-Test Split (0.2),1 layer,0.2,3,Softmax,Sparse Categorical Crossentropy,0.001,Patience=3,50,32,0.93,0.94,0.94,0.94
