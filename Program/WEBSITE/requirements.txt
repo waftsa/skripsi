@@ -4,4 +4,4 @@ numpy
 matplotlib
 nltk
 tensorflow 
-BeautifulSoip
+bs4
