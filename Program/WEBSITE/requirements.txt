@@ -3,4 +3,5 @@ pandas
 numpy
 matplotlib
 nltk
-tensorflow
+tensorflow 
+BeautifulSoip
