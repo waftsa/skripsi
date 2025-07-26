@@ -3,6 +3,6 @@ pandas
 numpy
 matplotlib
 nltk
-tansorflow
+tensorflow
 seaborn 
 BeautifulSoup
