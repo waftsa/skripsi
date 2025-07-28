@@ -12,13 +12,13 @@ st.write("Masukkan teks di bawah ini untuk memprediksi sentimen menggunakan mode
 
 # Path
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "model" / "lstm_model.keras"
+MODEL_LSTM = BASE_DIR / "model" / "lstm_model.keras"
 TOKENIZER_PATH = BASE_DIR / "data" / "tokenizer.pkl"
 
 # Load model
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(MODEL_PATH)
+    return tf.keras.models.load_model(MODEL_LSTM)
 
 # Load tokenizer
 @st.cache_resource

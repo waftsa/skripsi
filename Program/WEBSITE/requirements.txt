@@ -1,6 +1,8 @@
 streamlit
 pandas
 numpy
-gensim
+seaborn
 matplotlib
 scikit-learn
+nltk
+beautifulsoup4

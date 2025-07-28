@@ -13,7 +13,7 @@ path_model = BASE_DIR / "model" / "word2vec_full.model"
 # load model
 @st.cache_resource
 def load_model():
-    model = Word2Vec.load(path_model)
+    model = Word2Vec.load(str(path_model))
     return model
 
 model = load_model()
