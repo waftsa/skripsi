@@ -6,4 +6,3 @@ matplotlib
 scikit-learn
 nltk
 beautifulsoup4
-tensorflow
