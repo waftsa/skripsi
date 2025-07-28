@@ -6,4 +6,5 @@ matplotlib
 scikit-learn
 nltk
 beautifulsoup4
-tensorflow-cpu==2.11.0
+tensorflow-cpu==2.9.1
+gensim==4.3.1
