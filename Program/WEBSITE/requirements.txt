@@ -6,5 +6,4 @@ matplotlib
 scikit-learn
 nltk
 beautifulsoup4
-tensorflow==2.18.0
-python-3.10
+tensorflow==2.15.0
