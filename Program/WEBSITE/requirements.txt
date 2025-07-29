@@ -6,4 +6,4 @@ matplotlib
 scikit-learn
 nltk
 beautifulsoup4
-tensorflow==2.15.0
+tensorflow-hub
