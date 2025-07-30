@@ -10,15 +10,15 @@ Halaman ini menampilkan dua jenis data berlabel:
 """)
 
 # Path ke file CSV 
-BASE_DIR = Path(__file__).resolve().parent.parent  # naik 1 folder dari /pages ke root
+BASE_DIR = Path(__file__).resolve().parent.parent 
 manual_path = BASE_DIR / "data" / "data_labelled_manual.csv"
 
 
-annotator_path = "./dataset/label_annotator.csv"
+annotator_path = BASE_DIR / "data" / "data_labelled_annotator.csv"
 
 # Tampilkan data manual
 try:
-    df_manual = pd.read_csv(manual_path, delimiter=";")
+    df_manual = pd.read_csv(manual_path, delimiter=';')
 
     with st.expander("📝 Data Label Manual"):
         st.dataframe(df_manual.head(20))
@@ -31,7 +31,7 @@ except Exception as e:
 
 # Tampilkan data annotator
 try:
-    df_annotator = pd.read_csv(annotator_path)
+    df_annotator = pd.read_csv(annotator_path, delimiter=';')
 
     with st.expander("👥 Data Label dari Annotator"):
         st.dataframe(df_annotator.head(20))

@@ -52,7 +52,7 @@ def show_pie_chart(df, label, title):
 
 # Pie chart awal (imbalanced)
 try:    
-    df_imbalanced = pd.read_csv(path_imbalanced)
+    df_imbalanced = pd.read_csv(path_imbalanced, delimiter=';')
     label_map = {
         'c': 'Contra-genocide', 0: 'Contra-genocide',
         'n': 'Netral',          1: 'Netral',
@@ -69,7 +69,7 @@ except Exception as e:
 
 # Oversampling
 try:
-    df_over = pd.read_csv(path_oversampled)
+    df_over = pd.read_csv(path_oversampled, delimiter=';')
 
     with st.expander("📈 Oversampling"):
         label_map = {
@@ -114,7 +114,7 @@ try:
     
     df_final['label'] = df_final['label'].map(label_map)
     
-    st.subheader("📊 Distribusi Data Awal")
+    st.subheader("📊 Distribusi Data Akhir")
     show_pie_chart(df_final, label='label', title="Distribusi Label Setelah Data Balancing")
     
 except Exception as e:
