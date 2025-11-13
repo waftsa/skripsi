@@ -8,4 +8,5 @@ nltk
 beautifulsoup4
 tensorflow
 ml-dtypes
+gensim
 
