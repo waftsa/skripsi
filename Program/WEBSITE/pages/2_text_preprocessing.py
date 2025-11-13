@@ -86,14 +86,14 @@ lemmatized = stopwords_removed.apply(lemmatize_text)
 with st.expander("5️⃣ Lemmatization"):
     st.dataframe(pd.DataFrame({'lemmatized': lemmatized.head(10)}))
 
-# # Tahap 6: Stemming
-# def stem_text(text):
-#     return ' '.join([stemmer.stem(word) for word in text.split()])
+# Tahap 6: Stemming
+def stem_text(text):
+    return ' '.join([stemmer.stem(word) for word in text.split()])
 
-# final_clean = lemmatized.apply(stem_text)
+final_clean = lemmatized.apply(stem_text)
 
-# with st.expander("6️⃣ Stemming"):
-#     st.dataframe(pd.DataFrame({'stemmed_final': final_clean.head(10)}))
+with st.expander("6️⃣ Stemming"):
+    st.dataframe(pd.DataFrame({'stemmed_final': final_clean.head(10)}))
 
 # 🔍 Tes Preprocessing dari Input User
 st.subheader("🧪 Uji Coba Text Preprocessing")
@@ -109,7 +109,7 @@ if st.button("🔄 Preprocess Teks"):
         text = remove_symbols_numbers_mentions(text)
         text = remove_stopwords(text)
         text = lemmatize_text(text)
-        # text = stem_text(text)
+        text = stem_text(text)
 
         st.success("Hasil Preprocessing:")
         st.code(text)

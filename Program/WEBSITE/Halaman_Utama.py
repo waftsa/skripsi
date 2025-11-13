@@ -14,16 +14,16 @@ st.markdown("---")
 st.subheader("👨‍💻 Tim Pengembang")
 
 BASE_DIR = Path(__file__).resolve().parent
-image_developer = BASE_DIR / "image" / "default.jpg"
-image_dosbim = BASE_DIR / "image" / "default.jpg"
-image_dosbim2 = BASE_DIR / "image" / "default.jpg"
+image_developer = BASE_DIR / "image" / "wafa.jpg"
+image_dosbim = BASE_DIR / "image" / "Bu Helen.jpg"
+image_dosbim2 = BASE_DIR / "image" / "Bu Mira.jpg"
 
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
     if image_developer.exists():
-        st.image(str(image_developer), width=200)
+        st.image(str(image_developer), width=100)
         st.write("*Wafa Tsabita*")
         st.write("**Developer**")
     else:
@@ -31,7 +31,7 @@ with col1:
 
 with col2:
     if image_dosbim.exists():
-        st.image(str(image_dosbim), width=200)
+        st.image(str(image_dosbim), width=100)
         st.write("*Dr. Afrida Helen, S.T., M.Kom.*")
         st.write("**Pembimbing Utama**")
     else:
@@ -39,7 +39,7 @@ with col2:
 
 with col3:
     if image_dosbim2.exists():
-        st.image(str(image_dosbim2), width=200)
+        st.image(str(image_dosbim2), width=100)
         st.write("*Mira Suryani, S.Pd, M.Kom.*")
         st.write("**Co-Pembimbing**")
     else:
