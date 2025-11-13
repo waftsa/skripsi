@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 
-st.title("📌 Data Labelled")
+st.header("📌 Data Labelled")
 st.markdown("""
 Halaman ini menampilkan dua jenis data berlabel:
 - **Pelabelan manual** oleh peneliti.

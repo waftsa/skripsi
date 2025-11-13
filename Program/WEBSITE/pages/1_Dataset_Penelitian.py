@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # Judul halaman
-st.title("📊 Dataset Penelitian")
+st.header("📊 Dataset Penelitian")
 
 # Penjelasan dataset
 st.markdown("""

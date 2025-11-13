@@ -2,7 +2,7 @@ import streamlit as st
 from pathlib import Path
 from PIL import Image
 
-st.title('ANALISIS SENTIMEN TERHADAP ISU GENOSIDA ISRAEL KEPADA PALESTINA')
+st.header('ANALISIS SENTIMEN TERHADAP ISU GENOSIDA ISRAEL KEPADA PALESTINA')
 
 st.write("""
         Aplikasi ini merupakan hasil dari penelitian skripsi penulis yang berjudul *Analisis Sentimen terhadap Isu Genosida Israel kepada Palestina pada Media Sosial X (Twitter)*.

@@ -5,7 +5,7 @@ import seaborn as sns
 from pathlib import Path
 
 
-st.title("⚖️ Data Balancing")
+st.header("⚖️ Data Balancing")
 st.markdown("""
 Halaman ini menampilkan kondisi distribusi data awal serta hasil proses balancing menggunakan:
 - **Oversampling**: Menambah data pada kelas minoritas.

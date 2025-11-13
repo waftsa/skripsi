@@ -20,7 +20,7 @@ nltk.download('punkt_tab')
 
 
 # Judul halaman
-st.title("🔮 Sentiment Prediction")
+st.header("🔮 Sentiment Prediction")
 st.write("Masukkan teks di bawah ini untuk memprediksi sentimen menggunakan model LSTM yang telah dilatih.")
 
 # Path

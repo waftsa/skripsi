@@ -18,7 +18,7 @@ lemmatizer = WordNetLemmatizer()
 stemmer = PorterStemmer()
 
 # Title & description
-st.title("🧹 Text Preprocessing")
+st.header("🧹 Text Preprocessing")
 st.markdown("Halaman ini menampilkan proses pembersihan teks secara bertahap dari data mentah tweet.")
 
 # Load dataset

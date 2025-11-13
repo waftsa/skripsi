@@ -19,7 +19,7 @@ def load_model():
 model = load_model()
 
 # judul
-st.title("🧠 Word Embedding - Word2Vec")
+st.header("🧠 Word Embedding - Word2Vec")
 st.caption("Model Word2Vec digunakan untuk mengubah kata menjadi representasi vektor berdimensi rendah.")
 
 # ====== Sample Table of Word Vectors ======
