@@ -8,19 +8,19 @@ Target Today
 
 ##### bab 2
 
-* input jurnal
-* rumus-rumus pada model
+* input jurnal✅
+* Perbaiki penelitian terdahulu
+* Arsitektur model LSTM dan BiLSTM(?)
 
 ##### bab 3
 
-* diagram
-* proofread
+* diagram✅
 
 ##### bab 4
 
 * ujicoba model word2vec✅
 * sub-bab model word2vec✅
-* sub-bab fine tuning hyperparameter
+* sub-bab fine tuning hyperparameter✅
 * sub-bab training dan evaluation model LSTM
 * sub-bab perbandingan model LSTM
 * finalisasi aplikasi
@@ -31,6 +31,10 @@ Target Today
 
 * kesimpulan (menjawab identifikasi masalah)
 * saran
+
+Proofread bab 1-5
+
+Konfirmasi bimbingan Bu Helen✅
 
 #### hubungi bu Mira
 

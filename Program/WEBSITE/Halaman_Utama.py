@@ -1,6 +1,6 @@
 import streamlit as st
 from pathlib import Path
-from PIL import Image
+
 
 st.header('ANALISIS SENTIMEN TERHADAP ISU GENOSIDA ISRAEL KEPADA PALESTINA')
 
