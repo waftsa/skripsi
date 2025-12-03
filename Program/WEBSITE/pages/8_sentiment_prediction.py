@@ -170,6 +170,6 @@ if st.button("Prediksi"):
         # Tampilkan hasil
         st.subheader("📊 Hasil Prediksi Tiap Model")
         for model_name, (label, conf) in results.items():
-            st.write(f"**{model_name}:** {label} ({conf:.2f})")
+            st.write(f"**{model_name}:** **{label}** — **{conf*100:.2f}%**")
 
         st.success(f"🏆 **Model Terpercaya:** {best_model[0]} — {best_model[1][0]} ({best_model[1][1]:.2f})")

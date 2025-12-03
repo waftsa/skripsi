@@ -6,6 +6,10 @@ Target Today
 
 
 
+##### bab 1
+
+* 
+
 ##### bab 2
 
 * input jurnal✅
