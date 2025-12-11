@@ -1,0 +1,18 @@
+data firts data
+
+p    186
+n    307
+c    405
+
+data oversampling pro 
+
+p    304
+n    185
+c     85
+
+Data Final 
+p    490
+n    492
+c    490
+
+1472

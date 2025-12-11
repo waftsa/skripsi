@@ -1,44 +1,57 @@
-Target Today
+Target Today 
 
 
 
-#### SKRIPSHIT
+Garis besar skripsi -> dari awalnya focus hanya fine tuning model LSTM diubah menjadi **komparasi 4 model**
 
 
 
-##### bab 1
+Cari referensi perbandingan model✅
 
-* 
+Cari struktur penulisan skripsi buat perbandingan model✅
 
-##### bab 2
+bab 1 
 
-* input jurnal✅
-* Perbaiki penelitian terdahulu
-* Arsitektur model LSTM dan BiLSTM(?)
+* rombak Latar belakang✅
+* rombak identifikasi masalah✅
+* rombak Batasan masalah✅
 
-##### bab 3
+bab 2
 
-* diagram✅
+* arsitektur pada model
+* tambahkan 5 jurnal lagi di penelitian terdahulu tentang komparasi model
+* cari penelitian gap-nya (belum ada penelitian analisis sentiment pakai perbandingan model)
+* tambah sub-bab TF-IDF
+* tamabh sub-bab word embedding 
 
-##### bab 4
+bab 3 
 
-* ujicoba model word2vec✅
-* sub-bab model word2vec✅
-* sub-bab fine tuning hyperparameter✅
-* sub-bab training dan evaluation model LSTM
-* sub-bab perbandingan model LSTM
+* Code scraping ✅
+* sub-bab tf-idf✅
+* sub-bab naive bayes
+* sub-bab svm
+* sub-bab BiLSTM
+
+bab 4 
+
+* sub-bab training dan evaluation model LSTM 
+* sub-bab perbandingan model-model 
 * finalisasi aplikasi
 * sub-bab implementasi aplikasi
 * sub-bab limitasi penelitian
 
-##### bab 5
+bab 5 
 
 * kesimpulan (menjawab identifikasi masalah)
 * saran
 
-Proofread bab 1-5
+Daftar Pustaka
 
-Konfirmasi bimbingan Bu Helen✅
+Lampiran 
 
-#### hubungi bu Mira
+Proofread semuanya
+
+hubungi bu Mira + kirim draf terbaru
+
+hubungi bu Helen + kirim draf terbaru
 
