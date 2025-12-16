@@ -20,9 +20,7 @@ bab 2
 
 * arsitektur pada model LSTM dan BiLSTM
 * tambahkan 5 jurnal lagi di penelitian terdahulu tentang komparasi model
-* cari penelitian gap-nya (belum ada penelitian analisis sentiment pakai perbandingan model)
-* tambah sub-bab TF-IDF
-* tamabh sub-bab word embedding
+* cari penelitian gap-nya (belum ada penelitian analisis sentiment pakai perbandingan model)✅
 * sub-bab SVM
 * sub-bab Naive Bayes
 
@@ -43,9 +41,9 @@ bab 4
 * sub-bab BiLSTM✅
 * sub-bab perbandingan evaluasi model✅
 * sub-bab perbandingan klasifikasi model✅
-* finalisasi aplikasi
-* sub-bab implementasi aplikasi
-* sub-bab limitasi penelitian
+* finalisasi aplikasi✅
+* sub-bab implementasi aplikasi✅
+* sub-bab limitasi penelitian✅
 
 bab 5
 
