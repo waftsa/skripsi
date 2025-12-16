@@ -29,8 +29,8 @@ MODEL_LSTM = BASE_DIR / "model" / "lstm_model.keras"
 MODEL_BILSTM = BASE_DIR / "model" / "bilstm_model.keras"
 MODEL_NB = BASE_DIR / "model" / "naive_bayes_model.pkl"
 MODEL_SVM = BASE_DIR / "model" / "svm_model.pkl"
-TOKENIZER_PATH = BASE_DIR / "model" / "tokenizer (2).pkl"
-VECTORIZER_PATH = BASE_DIR / "model" / "vectorizer.pkl"
+TOKENIZER_PATH = BASE_DIR / "model" / "tokenizer.pkl"
+VECTORIZER_PATH = BASE_DIR / "model" / "tfidf_vectorizer.pkl"
 
 # Load model dan tokenizer
 @st.cache_resource
