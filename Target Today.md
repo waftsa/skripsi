@@ -2,13 +2,13 @@ Target Today
 
 
 
-Garis besar skripsi -> dari awalnya focus hanya fine tuning model LSTM diubah menjadi **komparasi 4 model**
+what to do 
 
-
-
-* Revisi Kesimpulan 
-* Revisi typo dan italic
-* Lampiran 
-* Dafpus perhatiin lagi tahun-tahunnya
 * slide ppt
-* Latihan presentasi
+* latihan presentasi
+* Perbaiki aplikasi 
+* rapihian jurnal 
+* baca-baca teori dan jurnal
+
+
+
