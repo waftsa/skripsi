@@ -2,13 +2,10 @@ Target Today
 
 
 
-what to do 
+what to do
 
 * slide ppt
 * latihan presentasi
-* Perbaiki aplikasi 
-* rapihian jurnal 
+* Perbaiki aplikasi
+* rapijian jurnal
 * baca-baca teori dan jurnal
-
-
-
