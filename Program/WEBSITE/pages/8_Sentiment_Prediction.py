@@ -11,17 +11,18 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+from nltk.stem import WordNetLemmatizer
 
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('punkt_tab')
 
 
-
-
 # Judul halaman
 st.header("🔮 Sentiment Prediction")
-st.write("Masukkan teks di bawah ini untuk memprediksi sentimen menggunakan model LSTM yang telah dilatih.")
+st.write("Masukkan teks di bawah ini untuk memprediksi sentimen menggunakan model Machine Learning yang telah dilatih.")
 
 # Path
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -81,13 +82,15 @@ custom_stopwords = stop_words - sentiment_stopwords
 
 stemmer = PorterStemmer()
 sensitive_words = {"israel", "palestine", "hamas", "genocide", "gaza", "zionist"}
+lemmatizer = WordNetLemmatizer()
 
 def custom_stem_id(word):
     word_lower = word.lower()
     if word_lower in sensitive_words:
         return word_lower
     else:
-        return stemmer.stem(word_lower)
+        lemma = lemmatizer.lemmatize(word_lower)
+        return stemmer.stem(lemma)
 
 def text_preprocess(text):
     text = str(text).lower()
@@ -115,7 +118,7 @@ def predict_lstm(text, model, tokenizer):
     padded = text_tokenizing(text, tokenizer)
     pred = model.predict(padded)[0]
     pred = np.array(pred).flatten()  
-    
+
     if len(pred) == 1:
         label = "Pro-Genocide" if pred[0] > 0.5 else "Cons-Genocide"
         confidence = pred[0] if pred[0] > 0.5 else 1 - pred[0]
@@ -128,7 +131,8 @@ def predict_lstm(text, model, tokenizer):
 
 
 def predict_sklearn(text, model, vectorizer):
-    X = vectorizer.transform([text])  
+    cleaned = text_preprocess(text)
+    X = vectorizer.transform([cleaned])  
     try:
         probs = model.predict_proba(X)[0]
         label_idx = np.argmax(probs)
@@ -172,4 +176,5 @@ if st.button("Prediksi"):
         for model_name, (label, conf) in results.items():
             st.write(f"**{model_name}:** **{label}** — **{conf*100:.2f}%**")
 
-        st.success(f"🏆 **Model Terpercaya:** {best_model[0]} — {best_model[1][0]} ({best_model[1][1]:.2f})")
+        st.success(f"**Model dengan Nilai Confidence Tertinggi :** {best_model[0]} — {best_model[1][0]} ({best_model[1][1]*100:.2f}%)")
+
