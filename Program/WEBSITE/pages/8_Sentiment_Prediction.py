@@ -12,6 +12,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
+from bs4 import BeautifulSoup
 
 nltk.download('wordnet')
 nltk.download('omw-1.4')
@@ -69,31 +70,15 @@ text_input = st.text_area("Masukkan kalimat yang ingin diprediksi:", height=150)
 
 # Fungsi preprocessing 
 stop_words = set(stopwords.words('english'))
-sentiment_stopwords = {
-    "the", "a", "an", "and", "or", "but", "if", "while", "of", "at", "by", "for", "with", "about",
-    "against", "between", "into", "through", "during", "before", "after", "above", "below", "to",
-    "from", "up", "down", "in", "out", "on", "off", "over", "under", "again", "further", "then",
-    "once", "here", "there", "when", "where", "why", "how", "all", "any", "both", "each", "few",
-    "more", "most", "other", "some", "such", "only", "own", "same", "so", "than", "too", "very",
-    "can", "will", "just", "should", "now", "you", "i", "me", "my", "we", "us", "our", "they",
-    "them", "their", "he", "him", "his", "she", "her", "it", "its", "this", "that", "these", "those"
-}
-custom_stopwords = stop_words - sentiment_stopwords
-
 stemmer = PorterStemmer()
-sensitive_words = {"israel", "palestine", "hamas", "genocide", "gaza", "zionist"}
 lemmatizer = WordNetLemmatizer()
-
-def custom_stem_id(word):
-    word_lower = word.lower()
-    if word_lower in sensitive_words:
-        return word_lower
-    else:
-        lemma = lemmatizer.lemmatize(word_lower)
-        return stemmer.stem(lemma)
 
 def text_preprocess(text):
     text = str(text).lower()
+    try:
+        text = BeautifulSoup(text, "html.parser").get_text()
+    except Exception:
+        pass
 
     text = re.sub(r"http\S+|www\S+|https\S+", "", text)      # hapus URL
     text = re.sub(r"@\w+", "", text)                         # hapus mention
@@ -103,11 +88,11 @@ def text_preprocess(text):
     text = re.sub(r"\s+", " ", text).strip()                 # hapus spasi berlebih
     text = re.sub(r'[^\x00-\x7F]+', '', str(text))           # hapus simbol non-ASCII
     words = word_tokenize(text)
-    words = [word for word in words if word not in custom_stopwords]
-    stemmed_tokens = [custom_stem_id(w) for w in words]
+    words = [word for word in words if word not in stop_words]
+    stemmed_tokens = [stemmer.stem(lemmatizer.lemmatize(w)) for w in words]
     return " ".join(stemmed_tokens)
 
-def text_tokenizing(text, tokenizer, max_len=100):
+def text_tokenizing(text, tokenizer, max_len=13):
     cleaned = text_preprocess(text)
     seq = tokenizer.texts_to_sequences([cleaned])
     padded = pad_sequences(seq, maxlen=max_len, padding='post')
